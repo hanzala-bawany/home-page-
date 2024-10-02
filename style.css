@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    /*font-weight: 400; */
+}
+
+.mainPage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.mainPage::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./assets/purple\ cenery.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: -1;
+}
+
+/* <!-- section 1 --> */
+
+.mainNav {
+    /* height: 10vh; */
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.mainNav img{
+    height: 20px;
+    width: 30px;
+    display: none;
+}
+
+@media only screen and (max-width:850px) {
+    .mainNav {
+        /* height: 10vh; */
+        position: relative;
+        top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 60px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+    .mainNav ul {
+        column-gap: 13px;
+    }
+
+
+}
+
+.mainNav ul li a {
+    color: white;
+}
+
+.mainNav p {
+    transition: 0.3s all;
+    font-weight: 600;
+}
+
+.mainNav p:hover {
+    transform: scale(110%);
+    text-decoration: underline;
+}
+
+.mainNav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.mainNav ul a {
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s all;
+}
+
+.mainNav ul a:hover {
+    transform: scale(110%);
+    text-decoration: underline;
+}
+
+/* section 2 */
+.section2 {
+    height: 55vh;
+    width: 90%;
+    /* border: 2px solid; */
+    margin: 20vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subSection1 {
+    width: 50%;
+    /* order: 2; */
+}
+
+.subSection1 button {
+    color: black;
+    height: 35px;
+    width: 20%;
+    border: 2px solid;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.subSection1 button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.subSection2 {
+    height: 100%;
+    width: 28%;
+}
+
+.subSection2 form {
+    /* background-color:green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.subSection2 form::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.2;
+    top: 0px;
+    left: 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.subSection2 h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    /* margin-top: 20px; */
+}
+
+.subSection2 .inputBox {
+    position: relative;
+}
+
+.subSection2 .inputBox input {
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid white;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.subSection2 .inputBox input::placeholder {
+    color: white;
+}
+
+.subSection2 .inputBox img {
+    width: 20px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.subSection2 .checkBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subSection2 .aform {
+    /* text-decoration: none; */
+    color: white;
+    display: inline-block;
+}
+
+.subSection2 .aform:hover {
+    /* transform:scale(110%); */
+    color: blue;
+}
+
+.subSection2 button {
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.subSection2 button:hover {
+    background-color: transparent;
+}
+
+@media only screen and (max-width:1050px) {
+    .section2 {
+        height: 45vh;
+        margin: 22vh auto;
+    }
+
+    .subSection1 {
+        width: 50%;
+    }
+
+    .subSection1 h1 {
+        font-size: 32px;
+    }
+
+    .subSection1 p {
+        font-size: 16px;
+    }
+
+    .subSection1 button {
+        color: black;
+        height: 35px;
+        width: 20%;
+        border: 2px solid;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .subSection2 .checkBox {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .subSection2 button {
+        /* width: 100%;
+                height: 40px;
+                border: 1.5px solid black;
+                border-radius: 25px;
+                color: black; */
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    .formLastDiv {
+        font-size: 12px;
+    }
+
+
+}
+
+@media only screen and (max-width:1050px) and (max-height:1000px) {
+
+    .section2 {
+        height: 42vh;
+        margin: 22vh auto;
+    }
+
+    .subSection1 {
+        width: 55%;
+    }
+
+    .subSection1 h1 {
+        font-size: 30px;
+    }
+
+    .subSection1 p {
+        font-size: 14px;
+    }
+
+    .subSection1 button {
+        color: black;
+        height: 32px;
+        width: 22%;
+        border: 2px solid;
+        border-radius: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px;
+    }
+
+    .subSection2 {
+        height: 100%;
+        width: 30%;
+    }
+
+    .subSection2 form {
+        /* background-color:green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 16px;
+    }
+
+    .subSection2 h2 {
+        font-size: 26px;
+    }
+
+    .subSection2 .inputBox input {
+        /* background-color: transparent; */
+        width: 100%;
+        height: 35px;
+        border: 1.5px solid white;
+        border-radius: 25px;
+        padding-left: 8px;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .subSection2 .inputBox img {
+        width: 17px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+    .subSection2 .checkBox {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .subSection2 button {
+        width: 100%;
+        height: 35px;
+        /*border: 1.5px solid black;
+                border-radius: 25px;
+                color: black; */
+        font-size: 17px;
+        font-weight: 700;
+
+    }
+
+    .formLastDiv {
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width:650px) and (max-height:1000px){
+    .mainNav {
+        /* height: 10vh; */
+        /* position: relative;
+        top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 60px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400; */
+        
+        margin-bottom: 60px;
+    }
+    .mainNav img{
+        display: inline-block;
+    }
+    .mainNav img:hover{
+        height: 25px;
+        width: 35px;
+    }
+    .mainNav ul{
+        display: none;
+    }
+    .section2 {
+        /* margin-top: 60px; */
+        height: 42vh;
+        margin: 22vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        row-gap: 40px;
+        /* flex-wrap: wrap; */
+        align-items: center;
+
+
+        /* flex-wrap: wrap; */
+    }
+
+     .subSection1 {
+        width: 100%;
+        /* align-self:flex-start; */
+        
+    }
+
+    .subSection1 h1 {
+        font-size: 26px;
+        /* font-weight: 00; */
+    }
+
+    .subSection1 p {
+        font-size: 12px;
+    }
+
+    .subSection1 button {
+        color: black;
+        height: 32px;
+        width: 22%;
+        border: 2px solid;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px;
+    }
+
+    .subSection2 {
+        height: 90%;
+        width: 230px;
+    }
+
+    .subSection2 form {
+        /* background-color:green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 16px;
+    }
+
+    .subSection2 h2 {
+        font-size: 26px;
+    }
+
+    .subSection2 .inputBox input {
+        /* background-color: transparent; */
+        width: 100%;
+        height: 30px;
+        border: 1.5px solid white;
+        border-radius: 25px;
+        padding-left: 8px;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .subSection2 .inputBox img {
+        width: 15px;
+        position: absolute;
+        right: 15px;
+        top: 7px;
+    }
+
+    .subSection2 .checkBox {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    } */
+
+    .subSection2 button {
+        width: 100%;
+        height: 30px;
+        /*border: 1.5px solid black;
+                border-radius: 25px;
+                color: black; */
+        font-size: 17px;
+        font-weight: 700;
+
+    }
+
+    .formLastDiv {
+        font-size: 12px;
+    }
+   
+
+}
